@@ -3,6 +3,7 @@
 ## 产品与边界
 
 - 对外名称为 NoteAgent，公开仓库为 `https://github.com/xrmpp/NoteAgent`，Python 分发名为 `note-agent`。应用包 `app`、本地目录、数据库 `ai_agent` 和已有数据卷名称保持不变；名称调整不迁移或清空用户数据。
+- 公开分支为 `main`，从当前源码快照独立起步，提交使用 GitHub 隐私邮箱。本地 `master` 保留含个人邮箱的旧开发历史，不对外推送；后续发布只推送 `main`，不要使用 `git push --all` 暴露旧历史。
 - 项目定位为个人知识库 Agent，面向个人笔记检索、阅读和问答。README 面向安装与使用者，不承载内部进度汇报、协作限制、验收经过或代码学习记录；开发状态放在唯一活跃计划中，不用“实验版”等笼统标签代替具体能力和使用边界。当前仍冻结新增功能。
 - 项目是个人专业知识库受控问答助手。`mode="agent"` 为单 Agent 主入口，`mode="rag"` 为共享检索与证据处理循环、但关闭工具的对照模式。
 - 唯一活跃计划见 [`docs/AI_PROJECT_BRIEF.md`](docs/AI_PROJECT_BRIEF.md)。本文件仅记录稳定事实；已接受的架构取舍见 `docs/adr/`。
