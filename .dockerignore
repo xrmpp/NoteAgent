@@ -1,0 +1,17 @@
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+docker-compose.override.yml
+.venv
+__pycache__
+.pytest_cache
+*.pyc
+*.egg-info
+tests
+.operations-evidence/
+data/private*/
+data/personal*/
+data/inbox/profile.md
+data/practice_notes/

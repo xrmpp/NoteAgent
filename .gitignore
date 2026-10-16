@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.pyc
+.env
+.env.*
+!.env.example
+*.egg-info/
+data/private*/
+data/personal*/
+!data/personal_notes/
+data/personal_notes/*
+!data/personal_notes/.gitkeep
+docs/private_yuque_export/
+
+# Local execution evidence
+.operations-evidence/
+
+# Dev-only compose override
+docker-compose.override.yml
+
+# Private inbox profile and handwritten practice notes
+data/inbox/profile.md
+data/practice_notes/

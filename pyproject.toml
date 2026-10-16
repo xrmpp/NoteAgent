@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "note-agent"
+version = "0.1.0"
+description = "Personal knowledge assistant with hybrid retrieval, read-only tools and execution traces."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "bm25s>=0.3.0,<0.4.0",
+  "fastapi>=0.115.0,<1.0.0",
+  "httpx>=0.27.0,<0.29.0",
+  "markdown-it-py>=3.0.0,<5.0.0",
+  "pgvector>=0.3.6,<0.5.0",
+  "psycopg[binary]>=3.2.0,<3.4.0",
+  "pydantic>=2.8.0,<3.0.0",
+  "pydantic-settings>=2.4.0,<3.0.0",
+  "sqlalchemy>=2.0.32,<3.0.0",
+  "sse-starlette>=2.1.0,<3.0.0",
+  "streamlit>=1.38.0,<2.0.0",
+  "uvicorn[standard]>=0.30.0,<1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0,<9.0.0",
+]
+
+[project.urls]
+Repository = "https://github.com/xrmpp/NoteAgent"
+Issues = "https://github.com/xrmpp/NoteAgent/issues"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
