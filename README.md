@@ -1,4 +1,4 @@
-# NoteAgent
+<h1 align="center">NoteAgent</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.11+">
