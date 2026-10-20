@@ -145,16 +145,22 @@ docker compose exec api python -m app.rag delete python/async.md
 
 每次提问先通过向量检索与 BM25 获取相关片段，再由模型判断证据是否足够。需要补充资料时，模型请求 `search_knowledge` 或 `read_document`，由 Python 校验参数并执行只读操作；获得证据后生成回答并校验引用编号。
 
-```text
-浏览器 → Streamlit → FastAPI → Python Agent → 生成模型
-                                 |
-                                 +-- 检索：pgvector + bm25s + RRF
-                                 +-- 原文阅读：read_document
-                                 +-- 持久化：PostgreSQL
-                                     文档、切片、对话与 Trace
+
+```mermaid
+flowchart LR
+    Notes[Markdown 笔记] --> KB[知识库<br/>pgvector + BM25s]
+    User([用户提问]) --> App[FastAPI / Streamlit]
+    App --> Agent[显式 Agent 循环]
+    KB --> Agent
+    Agent --> Tools[按需补证<br/>搜索 / 阅读]
+    Tools --> KB
+    Agent --> Answer[带引用回答]
+    Agent --> Trace[执行 Trace]
 ```
 
 RRF（Reciprocal Rank Fusion，倒数排名融合）用于合并向量与 BM25 的检索排名。问答通过 SSE 传递执行进度，答案在生成完成后显示，不是逐 token 输出。
+
+更完整的模块边界、文档维护和持久化说明见 [架构说明](docs/architecture.md)。
 
 ## 使用边界
 
