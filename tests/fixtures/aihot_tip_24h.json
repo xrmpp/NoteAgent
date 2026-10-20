@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "query": {
+    "mode": "selected",
+    "category": "tip",
+    "window": "24h",
+    "q": null,
+    "by": "timeline",
+    "ordering": "timelineDesc"
+  },
+  "items": [
+    {
+      "id": "rn5q4m7qlqukq9q8g4ne975lj",
+      "title": "Manus 分享视频生成与时间线编辑工作流",
+      "originalTitle": "推出 Manus 2.0 视频编辑器：人人都能制作值得分享的视频",
+      "summary": "Manus 分享使用既有视频能力的创作经验：先由 AI 搜索参考、制作镜头与代码视觉元素，再在 Manus Studio 的视频编辑器中逐轨调整画面、字幕、配乐和音效。教程还演示导入本地素材、自动转录与编排初剪，以及将长视频剪成短片；作者以 125 段旅行素材整理成约 11 分钟成片为例，说明如何把生成初稿继续打磨为可发布作品。",
+      "source": {
+        "name": "Manus：Blog（网页）"
+      },
+      "links": {
+        "aihot": "https://aihot.news/items/rn5q4m7qlqukq9q8g4ne975lj",
+        "original": "https://manus.im/zh-cn/blog/introducing-video-editor"
+      },
+      "publishedAt": "2026-09-30T16:00:00.000Z",
+      "discoveredAt": "2026-10-02T03:59:23.719Z",
+      "category": "tip",
+      "score": 72,
+      "selected": true,
+      "reason": "作者结合真实项目，介绍从导入素材、转录和编排初剪，到逐轨调整字幕、画面与音频的工作流，读者可将这些方法用于自己的视频制作。",
+      "attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/rn5q4m7qlqukq9q8g4ne975lj"
+      }
+    },
+    {
+      "id": "ukk2qw5l1r9jqhsykqai2cf30",
+      "title": "OpenRouter 解析 LangChain 与 CrewAI 编排和 OpenRouter 原生路由的差异",
+      "originalTitle": "LangChain vs CrewAI: Orchestration Compared to OpenRouter-Native Routing",
+      "summary": "OpenRouter 发文将多模型编排分为工作流编排、模型路由和提供商路由三层，指出 LangGraph 和 CrewAI 负责工作流编排，OpenRouter 负责模型与提供商路由，二者不互相替代。",
+      "source": {
+        "name": "OpenRouter：Announcements（RSS）"
+      },
+      "links": {
+        "aihot": "https://aihot.news/items/ukk2qw5l1r9jqhsykqai2cf30",
+        "original": "https://openrouter.ai/blog/insights/langchain-vs-crewai-orchestration-compared-to-openrouter-native-routing/"
+      },
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "discoveredAt": "2026-10-02T00:33:23.898Z",
+      "category": "tip",
+      "score": 62,
+      "selected": true,
+      "reason": "原文把多模型编排拆成三层职责，并给出同一管道在直接路由和框架下的对照代码，读者可据此选择自己项目所需的层。",
+      "attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/ukk2qw5l1r9jqhsykqai2cf30"
+      }
+    },
+    {
+      "id": "sbvvdrkyjbtob4gp4iwwtyar1",
+      "title": "Claude Code mods 入门教程：从零构建 Token Weather 上下文窗口预报插件",
+      "originalTitle": "Getting started with Claude Code mods",
+      "summary": "这篇 Claude Code 官方开发者教程介绍 mods，即以 hooks 形式运行在插件内的 JavaScript 或 TypeScript 模块，可以观察、重写或拒绝事件，甚至绘制自定义 UI，需 Claude Code 2.1.287 或更高版本。",
+      "source": {
+        "name": "Anthropic：Claude.dev 开发者博客（RSS）"
+      },
+      "links": {
+        "aihot": "https://aihot.news/items/sbvvdrkyjbtob4gp4iwwtyar1",
+        "original": "https://claude.dev/blog/getting-started-with-claude-code-mods/"
+      },
+      "publishedAt": "2026-10-01T12:00:00.000Z",
+      "discoveredAt": "2026-10-01T18:04:35.083Z",
+      "category": "tip",
+      "score": 68,
+      "selected": true,
+      "reason": "教程从空文件夹完整构建一个 mods 插件，并给出事件链、状态保持和热重载等可直接复用的实践要点。",
+      "attribution": {
+        "name": "AIHOT",
+        "url": "https://aihot.news/items/sbvvdrkyjbtob4gp4iwwtyar1"
+      }
+    }
+  ],
+  "page": {
+    "count": 3,
+    "hasMore": true
+  }
+}
