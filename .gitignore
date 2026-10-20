@@ -27,3 +27,11 @@ docker-compose.override.yml
 # Private inbox profile and handwritten practice notes
 data/inbox/profile.md
 data/practice_notes/
+
+# Local-only maintainer material; not part of the public repository
+docs/career/
+/AGENTS.md
+/CONTEXT.md
+/docs/AI_PROJECT_BRIEF.md
+/docs/adr/
+/docs/inbox/
